@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memories</title>
+    <meta
+      name="description"
+      content="Memories est une plateforme moderne pour partager et télécharger des vidéos de qualité avec une inscription rapide et sécurisée."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></symbol>
+      <symbol id="icon-sparkles" viewBox="0 0 24 24"><path d="m12 3 1.9 5.8L20 11l-6.1 2.2L12 19l-1.9-5.8L4 11l6.1-2.2L12 3Z"/><path d="m19 14 1.1 2.9L23 18l-2.9 1.1L19 22l-1.1-2.9L15 18l2.9-1.1L19 14ZM5 2l.8 2.2L8 5l-2.2.8L5 8l-.8-2.2L2 5l2.2-.8L5 2Z"/></symbol>
+      <symbol id="icon-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></symbol>
+      <symbol id="icon-gamepad" viewBox="0 0 24 24"><path d="M6 12h4m-2-2v4m7-1h.01M18 11h.01M7 7h10a5 5 0 0 1 4.9 6l-.8 4a2 2 0 0 1-3.3 1l-2.2-2H8.4l-2.2 2a2 2 0 0 1-3.3-1l-.8-4A5 5 0 0 1 7 7Z"/></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2m6-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm10 10v-2a4 4 0 0 0-3-3.87m-1-11.13a4 4 0 0 1 0 7.75"/></symbol>
+    </svg>
+
+    <header class="topbar">
+      <div class="logo-wrap">
+        <div class="logo-icon">M</div>
+        <div class="logo-text">Memories</div>
+      </div>
+
+      <nav class="nav">
+        <a href="#accueil">Accueil</a>
+        <a href="#inscription">Inscription</a>
+        <a href="#upload">Publier</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#profil">Profil</a>
+      </nav>
+
+      <a href="#profil" class="btn btn-small">Connexion</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activer le mode sombre" aria-pressed="false">
+        <svg class="theme-icon theme-icon-sun" aria-hidden="true"><use href="#icon-sun"></use></svg>
+        <svg class="theme-icon theme-icon-moon" aria-hidden="true"><use href="#icon-moon"></use></svg>
+        <span class="theme-label">Mode sombre</span>
+      </button>
+    </header>
+
+    <main id="accueil">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Memories</p>
+          <h1>Des souvenirs, des amis et des passions.</h1>
+          <p class="subtitle">
+            Une communauté anime, gaming et pleine de souvenirs entre amis.
+          </p>
+
+          <div class="cta-row">
+            <a href="#inscription" class="btn">Créer un compte</a>
+            <a href="#galerie" class="btn btn-secondary">Explorer</a>
+          </div>
+
+          <div class="stats">
+            <div>
+              <strong>12K+</strong>
+              <span>Amis</span>
+            </div>
+            <div>
+              <strong>4.8</strong>
+              <span>Vibe</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Passions</span>
+            </div>
+          </div>
+
+          <div class="quick-blurbs">
+            <div class="mini-blurb">
+              <strong>Anime</strong>
+              <span>Ambiance visuelle, mangas et univers colorés.</span>
+            </div>
+            <div class="mini-blurb">
+              <strong>Gaming</strong>
+              <span>Session intense, défis, co-op et énergie.</span>
+            </div>
+            <div class="mini-blurb">
+              <strong>Amis</strong>
+              <span>Partages, souvenirs et moments spontanés.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="video-box">
+            <div class="video-header">
+              <span class="dot red"></span>
+              <span class="dot amber"></span>
+              <span class="dot green"></span>
+            </div>
+
+            <div class="video-screen">
+              <div class="visual-tag">Anime / gaming</div>
+              <div class="play-button">✦</div>
+              <div class="video-badges">
+                <span>Mangas</span>
+                <span>Gaming</span>
+              </div>
+            </div>
+
+            <div class="mini-row">
+              <div class="mini-card mini-one"></div>
+              <div class="mini-card mini-two"></div>
+              <div class="mini-card mini-three"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel-grid" id="inscription">
+        <div class="panel signup-panel">
+          <div class="panel-header">
+            <p class="mini-tag">Créer un compte</p>
+            <h2>Inscrivez-vous</h2>
+          </div>
+
+          <form id="signupForm">
+            <label>
+              Nom complet
+              <input type="text" id="fullName" placeholder="Ex: Yuki Tanaka" required />
+            </label>
+
+            <label>
+              Numéro de téléphone
+              <input type="tel" id="phone" placeholder="Ex: +225 01 23 45 67 89" required />
+            </label>
+
+            <label>
+              Adresse e-mail
+              <input type="email" id="email" placeholder="Ex: moi@email.com" />
+            </label>
+
+            <button type="submit" class="btn full-width">S’inscrire</button>
+            <p id="signupMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+
+        <div class="panel upload-panel" id="upload">
+          <div class="panel-header">
+            <p class="mini-tag">Poster</p>
+            <h2>Ajouter une illustration</h2>
+          </div>
+
+          <form id="uploadForm">
+            <label>
+              Titre de l’image
+              <input type="text" id="videoTitle" placeholder="Ex: Session gaming avec les amis" required />
+            </label>
+
+            <label>
+              Nom de l’auteur
+              <input type="text" id="videoAuthor" placeholder="Ex: Akira" required />
+            </label>
+
+            <label>
+              Catégorie
+              <select id="videoCategory" required>
+                <option value="Mangas">Mangas</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Amis">Amis &amp; activités</option>
+              </select>
+            </label>
+
+            <label>
+              Description
+              <textarea id="videoDescription" rows="4" placeholder="Décris le moment, la vibe ou le thème..."></textarea>
+            </label>
+
+            <label class="file-label">
+              Sélectionner une illustration
+              <input type="file" id="videoFile" accept="image/*" required />
+            </label>
+
+            <button type="submit" class="btn btn-accent full-width">Publier dans la galerie</button>
+            <p id="uploadMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="dashboard-section" id="profil">
+        <div class="dashboard-card profile-card">
+          <div class="profile-header">
+            <div class="avatar">M</div>
+            <div>
+              <p class="mini-tag">Mon profil</p>
+              <h2>Mina K.</h2>
+            </div>
+          </div>
+
+          <div class="profile-grid">
+            <div>
+              <span>Numéro</span>
+              <strong>+225 01 23 45 67 89</strong>
+            </div>
+            <div>
+              <span>Abonnés</span>
+              <strong>2.4K</strong>
+            </div>
+            <div>
+              <span>Favoris</span>
+              <strong>Mangas / Gaming</strong>
+            </div>
+          </div>
+
+          <div class="profile-tags">
+            <span>Mangas</span>
+            <span>Gaming</span>
+            <span>Anime</span>
+            <span>Sorties</span>
+          </div>
+        </div>
+
+        <div class="dashboard-card login-card">
+          <div class="panel-header">
+            <p class="mini-tag">Connexion</p>
+            <h2>Accédez à votre espace</h2>
+          </div>
+
+          <form id="loginForm">
+            <label>
+              Numéro de téléphone
+              <input type="tel" id="loginPhone" placeholder="Ex: +225 01 23 45 67 89" required />
+            </label>
+
+            <label>
+              Mot de passe
+              <input type="password" id="loginPassword" placeholder="Entrez votre mot de passe" required />
+            </label>
+
+            <button type="submit" class="btn full-width">Se connecter</button>
+            <p id="loginMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="chat-section" id="chat">
+        <div class="section-title-row">
+          <div>
+            <p class="mini-tag">Messages</p>
+            <h2>Chat entre amis</h2>
+          </div>
+        </div>
+
+        <div class="chat-box">
+          <div class="chat-header-box">
+            <div class="online-dot"></div>
+            <span>Memories chat</span>
+          </div>
+
+          <div class="chat-messages" id="chatMessages">
+            <div class="message incoming">
+              <strong>Yuki</strong>
+              <p>Salut ! Tu as vu le nouveau thème manga ?</p>
+            </div>
+            <div class="message outgoing">
+              <strong>Moi</strong>
+              <p>Oui, c’est top. On peut poster plus de visuels ce soir.</p>
+            </div>
+            <div class="message incoming">
+              <strong>Ren</strong>
+              <p>Je suis partant pour une session gaming !</p>
+            </div>
+          </div>
+
+          <form id="chatForm" class="chat-form">
+            <input type="text" id="chatInput" placeholder="Écris un message..." required />
+            <button type="submit" class="btn btn-small">Envoyer</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="galerie">
+        <div class="section-title-row">
+          <div>
+            <p class="mini-tag">Découvrir</p>
+            <h2>Passions, amis et inspirations</h2>
+          </div>
+          <a href="#upload" class="btn btn-secondary">Partager une idée</a>
+        </div>
+
+        <div class="friends-strip">
+          <span class="friend-pill">Mangas</span>
+          <span class="friend-pill">Gaming</span>
+          <span class="friend-pill">Anime</span>
+          <span class="friend-pill">Sport</span>
+          <span class="friend-pill">Voyages</span>
+          <span class="friend-pill">Autres activités</span>
+        </div>
+
+        <p class="gallery-note">Anime, gaming, culture et bons souvenirs entre amis, tout en une seule galerie.</p>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <article class="video-card illustration-card manga-card">
+            <div class="thumb thumb-one">
+              <span class="icon-badge"><svg class="category-icon" aria-hidden="true"><use href="#icon-book"></use></svg></span>
+            </div>
+            <div class="video-card-body">
+              <div class="meta-row">
+                <span class="tag">Mangas</span>
+                <span class="duration">Illustration</span>
+              </div>
+              <h3>Arc manga</h3>
+              <p>Des univers illustrés, de belles histoires et beaucoup d’émotions.</p>
+              <a class="card-action" href="#upload">Découvrir les mangas <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="video-card illustration-card gaming-card">
+            <div class="thumb thumb-two">
+              <span class="icon-badge"><svg class="category-icon" aria-hidden="true"><use href="#icon-gamepad"></use></svg></span>
+            </div>
+            <div class="video-card-body">
+              <div class="meta-row">
+                <span class="tag">Gaming</span>
+                <span class="duration">Illustration</span>
+              </div>
+              <h3>Night run</h3>
+              <p>Énergie de jeu, missions, score et bonne ambiance.</p>
+              <a class="card-action" href="#upload">Voir la catégorie <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="video-card illustration-card activity-card">
+            <div class="thumb thumb-three">
+              <span class="icon-badge"><svg class="category-icon" aria-hidden="true"><use href="#icon-users"></use></svg></span>
+            </div>
+            <div class="video-card-body">
+              <div class="meta-row">
+                <span class="tag">Amis</span>
+                <span class="duration">Illustration</span>
+              </div>
+              <h3>After party</h3>
+              <p>Sorties, rires, souvenirs et moments spontanés.</p>
+              <a class="card-action" href="#upload">Partager un souvenir <span aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="logo-wrap">
+        <div class="logo-icon">M</div>
+        <div class="logo-text">Memories</div>
+      </div>
+      <p>© 2026 Memories. Tous droits réservés.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
